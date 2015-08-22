@@ -1,7 +1,7 @@
 alias ll='ls -al'
 alias h='history'
 alias pup='cd ~/git/puppet'
-alias dotfiles='cd ~/.homesick/repos/dotfiles/home"
+alias dotfiles='cd ~/.homesick/repos/dotfiles/home'
 alias fabric='cd ~/git/fabric'
 alias be='bundle exec'
 alias lock='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine; ssh-add -D'
