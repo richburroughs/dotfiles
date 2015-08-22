@@ -13,6 +13,7 @@ Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplete.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
