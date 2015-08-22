@@ -1,4 +1,4 @@
-# homesick-castle
+# dotfiles
 Storage for my dotfiles
 
 To install:
