@@ -2,10 +2,10 @@ set shell=/bin/sh
 " Use Vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 " Install plugins with Vundle in vim/bundles
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
@@ -13,6 +13,9 @@ Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/syntastic'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 "
 syntax on
 filetype plugin indent on
