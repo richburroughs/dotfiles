@@ -41,3 +41,5 @@ colorscheme solarized
 " Airline settings
 set laststatus=2 "Always display bar
 set ttimeoutlen=50 "Remove delay leaving insert mode
+" Ctrl+n opens Nerdtree
+map <C-n> :NERDTreeToggle<CR>
