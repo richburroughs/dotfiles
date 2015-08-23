@@ -66,3 +66,6 @@ zstyle ':completion:*' hosts off
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
+# PATH for Homebrew
+export PATH="/usr/local/bin:$PATH"
+
