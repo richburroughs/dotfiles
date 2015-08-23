@@ -116,8 +116,7 @@ zstyle ':completion:*' hosts off
 # source ~/google-cloud-sdk/completion.zsh.inc
 
 # Set GROOVY_HOME
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
+# export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
