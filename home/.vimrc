@@ -48,3 +48,8 @@ set laststatus=2 "Always display bar
 set ttimeoutlen=50 "Remove delay leaving insert mode
 " Ctrl+n opens Nerdtree
 map <C-n> :NERDTreeToggle<CR>
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
