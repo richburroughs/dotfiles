@@ -4,7 +4,7 @@ source ~/.git-completion.bash
 # export PIP_REQUIRE_VIRTUALENV=true
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-export PS1="[\u: \W]\$ "
+export PS1="\W \$ "
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
