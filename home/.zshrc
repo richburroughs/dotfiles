@@ -11,7 +11,8 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme robbyrussell
+# antigen theme robbyrussell
+antigen theme awesomepanda
 
 # Tell antigen that you're done.
 antigen apply
