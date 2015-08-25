@@ -1,22 +1,35 @@
-source ~/github/zsh-users/antigen/antigen.zsh
+# load zgen
+source "${HOME}/github/tarjoilija/zgen/zgen.zsh"
 
-# Load the oh-my-zsh's library.
-# antigen use oh-my-zsh
+# check if there's no init script
+if ! zgen saved; then
+    echo "Creating a zgen save"
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-# antigen bundle git
-# antigen bundle command-not-found
-# antigen bundle gitfast
+    zgen oh-my-zsh
 
-# Syntax highlighting bundle.
-# antigen bundle zsh-users/zsh-syntax-highlighting
+    # plugins
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/command-not-found
+    zgen load zsh-users/zsh-syntax-highlighting
+    zgen load /path/to/super-secret-private-plugin
 
-# Load the theme.
-# antigen theme robbyrussell
-# antigen theme awesomepanda
+    # bulk load
+    zgen loadall <<EOPLUGINS
+        zsh-users/zsh-history-substring-search
+        /path/to/local/plugin
+EOPLUGINS
+    # ^ can't indent this EOPLUGINS
 
-# Tell antigen that you're done.
-# antigen apply
+    # completions
+    zgen load zsh-users/zsh-completions src
+
+    # theme
+    zgen oh-my-zsh themes/arrow
+
+    # save all to init script
+    zgen save
+fi
 
 # User configuration
 export EDITOR='vim'
