@@ -8,17 +8,16 @@ if ! zgen saved; then
     zgen oh-my-zsh
 
     # plugins
-    zgen oh-my-zsh plugins/git
-    zgen oh-my-zsh plugins/sudo
-    zgen oh-my-zsh plugins/command-not-found
-    zgen load zsh-users/zsh-syntax-highlighting
-    zgen load /path/to/super-secret-private-plugin
+#   zgen oh-my-zsh plugins/git
+#   zgen oh-my-zsh plugins/sudo
+#   zgen oh-my-zsh plugins/command-not-found
+#   zgen load zsh-users/zsh-syntax-highlighting
 
     # bulk load
-    zgen loadall <<EOPLUGINS
-        zsh-users/zsh-history-substring-search
-        /path/to/local/plugin
-EOPLUGINS
+#   zgen loadall <<EOPLUGINS
+#       zsh-users/zsh-history-substring-search
+#       /path/to/local/plugin
+#EOPLUGINS
     # ^ can't indent this EOPLUGINS
 
     # completions
