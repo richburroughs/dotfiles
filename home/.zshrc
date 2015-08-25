@@ -6,9 +6,10 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 # antigen bundle git
 # antigen bundle command-not-found
+antigen bundle gitfast
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
 # antigen theme robbyrussell
@@ -37,22 +38,22 @@ setopt INC_APPEND_HISTORY
 # setopt SHARE_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_SPACE
-setopt NO_HIST_BEEP
-setopt HIST_NO_STORE
+#setopt NO_HIST_BEEP
+#setopt HIST_NO_STORE
 
 # More options
-setopt NO_BEEP
-setopt NO_FLOW_CONTROL
+#setopt NO_BEEP
+#setopt NO_FLOW_CONTROL
 
 # Force Emacs mode
-bindkey -e
+#bindkey -e
 
-unalias run-help
-autoload run-help
-HELPDIR=/usr/local/share/zsh/help
+#unalias run-help
+#autoload run-help
+#HELPDIR=/usr/local/share/zsh/help
 
 # Turn off hosts completion for scp/ssh
-zstyle ':completion:*' hosts off
+#zstyle ':completion:*' hosts off
 
 # The next line updates PATH for the Google Cloud SDK.
 # source ~/google-cloud-sdk/path.zsh.inc
