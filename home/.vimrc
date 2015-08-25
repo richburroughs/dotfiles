@@ -28,6 +28,7 @@ filetype plugin indent on    " required
 "
 syntax on
 filetype plugin indent on
+set number
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
