@@ -27,3 +27,4 @@ export PATH="/usr/local/bin:$PATH"
 
 # Set GROOVY_HOME
 # export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export PATH="$HOME/.rbenv/bin:$PATH"
