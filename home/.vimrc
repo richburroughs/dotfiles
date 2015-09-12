@@ -12,7 +12,12 @@ Plugin 'godlygeek/tabular'
 " Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
 " Plugin 'yegappan/mru'
-Plugin 'scrooloose/syntastic'
+" 
+" Disabled syntastic because vim-puppet hooks into it and was
+" running puppet parser validate every time I saved, and it was slow.
+" 
+" Plugin 'scrooloose/syntastic'
+" 
 Plugin 'scrooloose/nerdtree'
 " Plugin 'Shougo/neocomplete.vim'
 " Plugin 'tpope/vim-fugitive'
