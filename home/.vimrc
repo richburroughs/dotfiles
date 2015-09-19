@@ -9,20 +9,20 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
-" Plugin 'elzr/vim-json'
+Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
-" Plugin 'yegappan/mru'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'fatih/vim-go'
 " 
 " Disabled syntastic because vim-puppet hooks into it and was
 " running puppet parser validate every time I saved, and it was slow.
-" 
 " Plugin 'scrooloose/syntastic'
 " 
-Plugin 'scrooloose/nerdtree'
+" Others disabled: 
 " Plugin 'Shougo/neocomplete.vim'
 " Plugin 'tpope/vim-fugitive'
 " Plugin 'Valloric/YouCompleteMe'
-Plugin 'kien/ctrlp.vim'
 " Plugin 'easymotion/vim-easymotion'
 " Plugin 'vim-ruby/vim-ruby'
 " Plugin 'wikitopian/hardmode'
