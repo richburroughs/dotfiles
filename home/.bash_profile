@@ -27,4 +27,9 @@ export PATH="/usr/local/bin:$PATH"
 
 # Set GROOVY_HOME
 # export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+# Update PATH for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Set GOPATH
+export GOPATH="/Users/richardb/github/richburroughs/gocode"

@@ -38,6 +38,7 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
+autocmd Filetype go setlocal expandtab tabstop=8 shiftwidth=8 softtabstop=8
 " Automagically set the right background color for Solarized on iTerm2.
 " You need the Solarized colors installed in iTerm2 for this to work.
 " If you're not using iTerm, you can manially change the entry after the
