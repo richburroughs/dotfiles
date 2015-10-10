@@ -14,6 +14,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
+Plugin 'vim-ruby/vim-ruby'
 " 
 " Disabled syntastic because vim-puppet hooks into it and was
 " running puppet parser validate every time I saved, and it was slow.
@@ -26,6 +27,7 @@ Plugin 'fatih/vim-go'
 " Plugin 'easymotion/vim-easymotion'
 " Plugin 'vim-ruby/vim-ruby'
 " Plugin 'wikitopian/hardmode'
+" Plugin 'fatih/vim-go'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
