@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 " Install plugins with Vundle in vim/bundles
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
 Plugin 'elzr/vim-json'
@@ -56,7 +56,7 @@ else
   set background=light
 endif
 " Use Solarized color scheme
-colorscheme solarized
+" colorscheme solarized
 " Airline settings
 set laststatus=2 "Always display bar
 set ttimeoutlen=50 "Remove delay leaving insert mode
