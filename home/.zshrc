@@ -1,5 +1,5 @@
 # load zgen
-source "${HOME}/github/tarjoilija/zgen/zgen.zsh"
+source "${HOME}/github/zgen/zgen.zsh"
 
 # check if there's no init script
 if ! zgen saved; then
@@ -24,7 +24,8 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-completions src
 
     # theme
-    zgen oh-my-zsh themes/arrow
+#   zgen oh-my-zsh themes/awesomepanda
+    zgen oh-my-zsh themes/garyblessington
 
     # save all to init script
     zgen save
@@ -83,3 +84,7 @@ eval "$(rbenv init - zsh)"
 # PATH for Homebrew
 export PATH="/usr/local/bin:$PATH"
 
+# Puppet/Beaker environment variables
+export PUPPET_INSTALL_TYPE=agent
+export PUPPET_VERSION=1.2.2
+export BEAKER_destroy=no
