@@ -88,3 +88,9 @@ export PATH="/usr/local/bin:$PATH"
 export PUPPET_INSTALL_TYPE=agent
 export PUPPET_VERSION=1.2.2
 export BEAKER_destroy=no
+
+# Python virtualenv setup
+export WORKON_HOME=~/pythonenvs
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+export PATH=$PATH:/Users/richardb/Library/Python/3.5/bin
+source /usr/local/bin/virtualenvwrapper.sh
