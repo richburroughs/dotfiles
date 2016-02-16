@@ -68,9 +68,6 @@ setopt HIST_IGNORE_SPACE
 # Turn off hosts completion for scp/ssh
 #zstyle ':completion:*' hosts off
 
-# The next line updates PATH for the Google Cloud SDK.
-# source ~/google-cloud-sdk/path.zsh.inc
-
 # The next line enables bash completion for gcloud.
 # source ~/google-cloud-sdk/completion.zsh.inc
 
@@ -90,7 +87,14 @@ export PUPPET_VERSION=1.2.2
 export BEAKER_destroy=no
 
 # Python virtualenv setup
-export WORKON_HOME=~/pythonenvs
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
-export PATH=$PATH:/Users/richardb/Library/Python/3.5/bin
-source /usr/local/bin/virtualenvwrapper.sh
+#export WORKON_HOME=~/venv
+#export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+#export PATH=$PATH:/Users/richardb/Library/Python/3.5/bin
+#source /usr/local/bin/virtualenvwrapper.sh
+source ~/venv/rich/bin/activate
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/richardb/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/richardb/google-cloud-sdk/completion.zsh.inc'
