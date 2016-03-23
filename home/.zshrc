@@ -87,10 +87,6 @@ export PUPPET_VERSION=1.2.2
 export BEAKER_destroy=no
 
 # Python virtualenv setup
-#export WORKON_HOME=~/venv
-#export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
-#export PATH=$PATH:/Users/richardb/Library/Python/3.5/bin
-#source /usr/local/bin/virtualenvwrapper.sh
 source ~/venv/rich/bin/activate
 
 # The next line updates PATH for the Google Cloud SDK.
