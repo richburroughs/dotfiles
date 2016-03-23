@@ -90,7 +90,7 @@ export BEAKER_destroy=no
 source ~/venv/rich/bin/activate
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/richardb/google-cloud-sdk/path.zsh.inc'
+# source '/Users/richardb/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/richardb/google-cloud-sdk/completion.zsh.inc'
+# source '/Users/richardb/google-cloud-sdk/completion.zsh.inc'
