@@ -53,6 +53,7 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_SPACE
 #setopt NO_HIST_BEEP
 #setopt HIST_NO_STORE
+unsetopt SHARE_HISTORY
 
 # More options
 #setopt NO_BEEP
