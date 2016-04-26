@@ -95,3 +95,6 @@ source ~/venv/rich/bin/activate
 
 # The next line enables shell command completion for gcloud.
 # source '/Users/richardb/google-cloud-sdk/completion.zsh.inc'
+
+# Turn off Google Analytics for Homebrew
+HOMEBREW_NO_ANALYTICS=1
