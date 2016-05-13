@@ -84,7 +84,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # Puppet/Beaker environment variables
 export PUPPET_INSTALL_TYPE=agent
-export PUPPET_VERSION=1.2.2
+export PUPPET_VERSION=1.4.1
 export BEAKER_destroy=no
 
 # Python virtualenv setup
@@ -98,3 +98,5 @@ source ~/venv/rich/bin/activate
 
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
+export GOPATH=$HOME
+
