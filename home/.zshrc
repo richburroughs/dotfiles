@@ -69,9 +69,6 @@ unsetopt SHARE_HISTORY
 # Turn off hosts completion for scp/ssh
 #zstyle ':completion:*' hosts off
 
-# The next line enables bash completion for gcloud.
-# source ~/google-cloud-sdk/completion.zsh.inc
-
 # Set GROOVY_HOME
 # export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
@@ -90,13 +87,12 @@ export BEAKER_destroy=no
 # Python virtualenv setup
 source ~/venv/rich/bin/activate
 
-# The next line updates PATH for the Google Cloud SDK.
-# source '/Users/richardb/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-# source '/Users/richardb/google-cloud-sdk/completion.zsh.inc'
-
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
 export GOPATH=$HOME
 
+# The next line updates PATH for the Google Cloud SDK.
+source ~/google-cloud-sdk/path.zsh.inc
+
+# The next line enables shell command completion for gcloud.
+source ~/google-cloud-sdk/completion.zsh.inc
