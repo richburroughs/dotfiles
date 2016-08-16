@@ -96,3 +96,7 @@ source ~/google-cloud-sdk/path.zsh.inc
 
 # The next line enables shell command completion for gcloud.
 source ~/google-cloud-sdk/completion.zsh.inc
+
+# Enable iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
