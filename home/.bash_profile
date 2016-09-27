@@ -38,3 +38,13 @@ export GOPATH="/Users/richardb/github/richburroughs/gocode"
 export PUPPET_INSTALL_TYPE=agent
 export PUPPET_VERSION=1.2.2
 export BEAKER_destroy=no
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/rich.burroughs/google-cloud-sdk/path.bash.inc ]; then
+  source '/Users/rich.burroughs/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/rich.burroughs/google-cloud-sdk/completion.bash.inc ]; then
+  source '/Users/rich.burroughs/google-cloud-sdk/completion.bash.inc'
+fi
