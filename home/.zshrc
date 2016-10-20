@@ -85,7 +85,7 @@ export PUPPET_VERSION=1.4.1
 export BEAKER_destroy=no
 
 # Python virtualenv setup
-source ~/venv/rich/bin/activate
+# source ~/venv/rich/bin/activate
 
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
