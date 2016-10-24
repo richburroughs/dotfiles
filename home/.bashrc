@@ -10,3 +10,19 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# GPGTools Path
+export PATH="/usr/local/MacGPG2/bin:$PATH"
+ 
+# GPG Agent - For use with SSH
+#
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  if [ -S "$SSH_AUTH_SOCK" ]; then
+    export GPG_AGENT_INFO SSH_AUTH_SOCK SSH_AGENT_PID
+  else
+    eval $(gpg-agent --daemon --enable-ssh-support)
+  fi
+else
+  eval $(gpg-agent --daemon --enable-ssh-support)
+fi
+export GPG_TTY=$(tty)

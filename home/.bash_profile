@@ -19,7 +19,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}\007"'
 HISTFILESIZE=5000
 
 # rbenv setup
-export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Path for Homebrew
