@@ -1,6 +1,6 @@
 alias ll='ls -al'
 alias h='history'
-alias pup='cd ~/git/puppet'
+alias pup='cd ~/git/puppetlabs-modules'
 alias dot='cd ~/.homesick/repos/dotfiles/home'
 alias be='bundle exec'
 alias ppv='puppet parser validate'
