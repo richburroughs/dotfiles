@@ -6,7 +6,6 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 " Install plugins with Vundle in vim/bundles
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'altercation/vim-colors-solarized'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
 Plugin 'elzr/vim-json'
@@ -15,21 +14,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'rhysd/vim-crystal'
-" 
-" Disabled syntastic because vim-puppet hooks into it and was
-" running puppet parser validate every time I saved, and it was slow.
-" Plugin 'scrooloose/syntastic'
-" 
-" Others disabled: 
-" Plugin 'Shougo/neocomplete.vim'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'easymotion/vim-easymotion'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'wikitopian/hardmode'
-" Plugin 'fatih/vim-go'
-"
+Plugin 'scrooloose/syntastic'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,9 +28,11 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
+"
 " Change tabs for Go development
 autocmd Filetype go setlocal expandtab tabstop=8 shiftwidth=8 softtabstop=8
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+"
 " Automagically set the right background color for Solarized on iTerm2.
 " You need the Solarized colors installed in iTerm2 for this to work.
 " If you're not using iTerm, you can manially change the entry after the
@@ -58,6 +46,7 @@ else
 endif
 " Use Solarized color scheme
 " colorscheme solarized
+"
 " Airline settings
 set laststatus=2 "Always display bar
 set ttimeoutlen=50 "Remove delay leaving insert mode
