@@ -89,7 +89,7 @@ export BEAKER_destroy=no
 
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
-export GOPATH=$HOME
+export GOPATH=$HOME/go
 
 # The next line updates PATH for the Google Cloud SDK.
 source ~/google-cloud-sdk/path.zsh.inc

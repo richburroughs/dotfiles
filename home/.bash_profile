@@ -31,7 +31,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Set GOPATH
-export GOPATH="/Users/richardb/github/richburroughs/gocode"
+export GOPATH=$HOME/go
 
 # Environment variables for Beaker testing
 export PUPPET_INSTALL_TYPE=agent
