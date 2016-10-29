@@ -50,10 +50,6 @@ export BEAKER_destroy=no
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
 
-# Set GOPATH and PATH for Go
-export GOPATH=$HOME/go
-export PATH="$PATH:$HOME/go/bin"
-
 # The next line updates PATH for the Google Cloud SDK.
 source ~/google-cloud-sdk/path.zsh.inc
 
@@ -79,3 +75,7 @@ else
   eval $(gpg-agent --daemon --enable-ssh-support)
 fi
 export GPG_TTY=$(tty)
+
+# Set GOPATH and PATH for Go
+export GOPATH=$HOME/go
+export PATH="$HOME/go/bin:$PATH"
