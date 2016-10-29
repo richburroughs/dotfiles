@@ -41,7 +41,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # Puppet/Beaker environment variables
 export PUPPET_INSTALL_TYPE=agent
-export PUPPET_VERSION=1.4.1
+export PUPPET_VERSION=1.7.1
 export BEAKER_destroy=no
 
 # Python virtualenv setup
