@@ -32,7 +32,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Environment variables for Beaker testing
 export PUPPET_INSTALL_TYPE=agent
-export PUPPET_VERSION=1.2.2
+export PUPPET_VERSION=1.7.1
 export BEAKER_destroy=no
 
 # The next line updates PATH for the Google Cloud SDK.
