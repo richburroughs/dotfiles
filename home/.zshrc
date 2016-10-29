@@ -15,11 +15,7 @@ if ! zgen saved; then
     zgen save
 fi
 
-# User configuration
-export EDITOR='vim'
-
 # Source profile and aliases
-
 if [ -f ~/.profile ]; then
     source ~/.profile
 fi
@@ -32,6 +28,9 @@ setopt INC_APPEND_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_SPACE
 unsetopt SHARE_HISTORY
+
+# User configuration
+export EDITOR='vim'
 
 # rbenv setup
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -50,7 +49,10 @@ export BEAKER_destroy=no
 
 # Turn off Google Analytics for Homebrew
 HOMEBREW_NO_ANALYTICS=1
+
+# Set GOPATH and PATH for Go
 export GOPATH=$HOME/go
+export PATH="$PATH:$HOME/go/bin"
 
 # The next line updates PATH for the Google Cloud SDK.
 source ~/google-cloud-sdk/path.zsh.inc
