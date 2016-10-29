@@ -30,9 +30,6 @@ export PATH="/usr/local/bin:$PATH"
 # Update PATH for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# Set GOPATH
-export GOPATH=$HOME/go
-
 # Environment variables for Beaker testing
 export PUPPET_INSTALL_TYPE=agent
 export PUPPET_VERSION=1.2.2
@@ -47,3 +44,7 @@ fi
 if [ -f /Users/rich.burroughs/google-cloud-sdk/completion.bash.inc ]; then
   source '/Users/rich.burroughs/google-cloud-sdk/completion.bash.inc'
 fi
+
+# Set GOPATH and PATH for Go
+export GOPATH=$HOME/go
+export PATH="$HOME/go/bin:$PATH"
