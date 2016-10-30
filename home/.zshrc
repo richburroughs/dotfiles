@@ -78,4 +78,4 @@ export GPG_TTY=$(tty)
 
 # Set GOPATH and PATH for Go
 export GOPATH=$HOME/go
-export PATH="$HOME/go/bin:$PATH"
+export PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
