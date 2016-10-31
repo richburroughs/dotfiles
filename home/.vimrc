@@ -38,9 +38,7 @@ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 " You need the Solarized colors installed in iTerm2 for this to work.
 " If you're not using iTerm, you can manually change the entry after the
 " last else. It defaults to dark.
-if $ITERM_PROFILE=="Solarized Light"
-  set background=light
-elseif $ITERM_PROFILE=="Solarized Dark"
+if $ITERM_PROFILE=="Solarized Dark"
   set background=dark
 else
   set background=light
