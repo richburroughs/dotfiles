@@ -31,6 +31,7 @@ set expandtab
 "
 " Change tabs for Go development
 autocmd Filetype go setlocal expandtab tabstop=8 shiftwidth=8 softtabstop=8
+" Change tabs for Python development
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 "
 " Automagically set the right background color for Solarized on iTerm2.
