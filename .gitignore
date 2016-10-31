@@ -1,3 +1,4 @@
 *.sw[op]
 home/.oh-my-zsh
 home/.config/gcloud/
+home/.config/gocode/
