@@ -1,81 +1,21 @@
-# load zgen
-source "${HOME}/github/zgen/zgen.zsh"
+source ~/github/zplug/init.zsh
 
-# check if there's no init script
-if ! zgen saved; then
-    echo "Creating a zgen save"
+# Make sure to use double quotes
+zplug "zsh-users/zsh-history-substring-search"
 
-    # completions
-    zgen load zsh-users/zsh-completions src
+# Supports oh-my-zsh plugins and the like
+zplug "plugins/git",   from:oh-my-zsh
 
-    # theme
-    zgen oh-my-zsh themes/garyblessington
+# Supports oh-my-zsh plugins and the like
+zplug "themes/garyblessington",   from:oh-my-zsh
 
-    # save all to init script
-    zgen save
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
 
-# Source profile and aliases
-if [ -f ~/.profile ]; then
-    source ~/.profile
-fi
-if [ -f ~/.aliases ]; then
-    source ~/.aliases
-fi
-
-# History options
-setopt INC_APPEND_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_SPACE
-unsetopt SHARE_HISTORY
-
-# User configuration
-export EDITOR='vim'
-
-# rbenv setup
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
-
-# PATH for Homebrew
-export PATH="/usr/local/bin:$PATH"
-
-# Puppet/Beaker environment variables
-export PUPPET_INSTALL_TYPE=agent
-export PUPPET_VERSION=1.7.1
-export BEAKER_destroy=no
-
-# Python virtualenv setup
-# source ~/venv/rich/bin/activate
-
-# Turn off Google Analytics for Homebrew
-HOMEBREW_NO_ANALYTICS=1
-
-# The next line updates PATH for the Google Cloud SDK.
-source ~/google-cloud-sdk/path.zsh.inc
-
-# The next line enables shell command completion for gcloud.
-source ~/google-cloud-sdk/completion.zsh.inc
-
-# Enable iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# GPGTools Path
-export PATH="/usr/local/MacGPG2/bin:$PATH"
-
-# GPG Agent - For use with SSH
-#
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  . "${HOME}/.gpg-agent-info"
-  if [ -S "$SSH_AUTH_SOCK" ]; then
-    export GPG_AGENT_INFO SSH_AUTH_SOCK SSH_AGENT_PID
-  else
-    eval $(gpg-agent --daemon --enable-ssh-support)
-  fi
-else
-  eval $(gpg-agent --daemon --enable-ssh-support)
-fi
-export GPG_TTY=$(tty)
-
-# Set GOPATH and PATH for Go
-export GOPATH=$HOME/go
-export PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
+# Then, source plugins and add commands to $PATH
+zplug load --verbose
