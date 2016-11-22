@@ -10,6 +10,8 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+alias h='history'
+
 # GPGTools Path
 export PATH="/usr/local/MacGPG2/bin:$PATH"
  

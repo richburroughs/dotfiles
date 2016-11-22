@@ -44,6 +44,8 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+alias h="history 0"
+
 # User configuration
 export EDITOR='vim'
 
