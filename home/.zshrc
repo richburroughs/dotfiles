@@ -7,16 +7,15 @@ fi
 # Essential
 source ~/.zplug/init.zsh
 
-# Make sure to use double quotes
-zplug "zsh-users/zsh-history-substring-search"
-
 # Supports oh-my-zsh plugins and the like
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
 zplug "plugins/git",   from:oh-my-zsh
 
 # Load oh-my-zsh libs
 zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:-1
 
-# Supports oh-my-zsh plugins and the like
+# Load theme
 zplug "themes/arrow",   from:oh-my-zsh
 
 # Install plugins if there are plugins that have not been installed
