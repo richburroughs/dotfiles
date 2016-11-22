@@ -44,7 +44,11 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+# Used to share this alias in .aliases but I want it set different for zsh
 alias h="history 0"
+
+# Function for searching history
+histsearch() { fc -lm "$@" 1 }
 
 # User configuration
 export EDITOR='vim'
