@@ -6,6 +6,9 @@ zplug "zsh-users/zsh-history-substring-search"
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
 
+# Load oh-my-zsh libs
+zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:-1
+
 # Supports oh-my-zsh plugins and the like
 zplug "themes/arrow",   from:oh-my-zsh
 
