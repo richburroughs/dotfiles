@@ -28,6 +28,7 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load # --verbose
+
 ## Command history configuration
 if [ -z "$HISTFILE" ]; then
     HISTFILE=$HOME/.zsh_history
@@ -52,9 +53,6 @@ fi
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
-
-# Used to share this alias in .aliases but I want it set different for zsh
-alias h="history 0"
 
 # Function for searching history
 histsearch() { fc -lm "$@" 1 }
