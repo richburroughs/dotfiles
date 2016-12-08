@@ -1,10 +1,4 @@
-# Check if zplug is installed
-if [[ ! -d ~/.zplug ]]; then
-  git clone https://github.com/zplug/zplug ~/.zplug
-  source ~/.zplug/init.zsh && zplug update --self
-fi
-
-# Essential
+# Essential for zplug
 source ~/.zplug/init.zsh
 
 # Supports oh-my-zsh plugins and the like
