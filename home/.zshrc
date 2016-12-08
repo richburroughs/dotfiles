@@ -21,7 +21,8 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load # --verbose
+# use --verbose to see details
+zplug load >>/dev/null
 
 ## Command history configuration
 if [ -z "$HISTFILE" ]; then
