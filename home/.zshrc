@@ -7,7 +7,7 @@ zplug "zsh-users/zsh-completions"
 zplug "plugins/git",   from:oh-my-zsh
 
 # Load oh-my-zsh libs
-zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:-1
+zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh"
 
 # Load theme
 zplug "themes/arrow",   from:oh-my-zsh
