@@ -49,6 +49,15 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+# Functions to enable and disable Yubikey with Yubiswitch
+keyon () {
+  osascript -e 'tell application "yubiswitch" to KeyOn'
+}
+
+keyoff () {
+  osascript -e 'tell application "yubiswitch" to KeyOff'
+}
+
 # Function for searching history
 histsearch() { fc -lm "$@" 1 }
 
