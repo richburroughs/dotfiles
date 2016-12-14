@@ -23,17 +23,19 @@ export PATH="/usr/local/MacGPG2/bin:$PATH"
 
 # GPG Agent - For use with SSH
 #
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  . "${HOME}/.gpg-agent-info"
-  if [ -S "$SSH_AUTH_SOCK" ]; then
-    export GPG_AGENT_INFO SSH_AUTH_SOCK SSH_AGENT_PID
+if [[ $USER == "rich.burroughs" ]]; then 
+  if [ -f "${HOME}/.gpg-agent-info" ]; then
+    . "${HOME}/.gpg-agent-info"
+    if [ -S "$SSH_AUTH_SOCK" ]; then
+      export GPG_AGENT_INFO SSH_AUTH_SOCK SSH_AGENT_PID
+    else
+      eval $(gpg-agent --daemon --enable-ssh-support)
+    fi
   else
     eval $(gpg-agent --daemon --enable-ssh-support)
   fi
-else
-  eval $(gpg-agent --daemon --enable-ssh-support)
+  export GPG_TTY=$(tty)
 fi
-export GPG_TTY=$(tty)
 
 # Set GOPATH and PATH for Go
 export GOPATH=$HOME/go
