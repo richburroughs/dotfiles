@@ -8,5 +8,6 @@
 	st = status
 [core]
 	editor = vim
+	pager = cat
 [pager]
 	log = false
