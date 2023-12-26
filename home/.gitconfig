@@ -1,6 +1,6 @@
 [user]
 	name = Rich Burroughs
-	email = rich@puppet.com
+	email = rich@richburroughs.dev
 [alias]
 	co = checkout
 	br = branch
